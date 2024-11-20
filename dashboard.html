@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+     
+<html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard- Recipe Radar</title>
+        <link rel="stylesheet"href="/css/styles.css">
+
+          </head>
+          <body>
+            <div class="container">
+                <h1> Welcome to Recipe Radar</h1>
+                <button id="LogoutBtn">Logout</button>
+                
+                <div id="recipeForm">
+                    <h2>Add a recipe</h2>
+                    <form id="recipeFormSubmit"></form>
+                    <input type="text" id="title" placeholder="Recipe Title" required><br>
+                    <textarea id="ingredients"placeholder="Ingredients" required></textarea><br>
+                    <textarea id="steps"placeholder="Steps" required></textarea><br>
+                    <button type="submit">Add Recipe</button>
+                    </form>
+                </div>
+                     <div id="recipeList">
+                      <h2>Your Recipes</h2>
+                      <ul id="recipes"></ul>
+                     </div>
+                     <div id="PremiumSection" sytle="display:none;">
+                        <h2>Premium Features</h2>
+                        <input type="text" id="diet" placeholder="Enter your diet type" required><br>
+                        <br>
+                        <button id="generateMealPlan">GenerateMealPlan</button>
+                        <div id="mealPlanResult"></div>
+                        
+                       </div>
+            </div>
+            <script scr="/js/app.js"></script>
+          </body>
+ </html>
