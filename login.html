@@ -6,30 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>login- Recipe Radar</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet"href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">"
+        <link rel="stylesheet" href="style.css">
 
           </head>
           <body>
-            <div class="container">
+            <div class="wrapper">
                 <h1>Recipe Radar</h1>
                 <h2>Login</h2>
 
                 <form method="post" action="">
-                  <p class="recover">
-                      <a href="#"> Recover Password</a>
-                  </p>
+                  
                       <div class="input group">
-                          <i class="fas fa-envelope "></i>
+                          <label for="Email"> <i class="fas fa-envelope "></i></label>
                           <input type="email" name="email" id="email" placeholder="Email" required>
-                          <label for="Email"> Email</label>
+                          
                           </div>
                           <div class="input group">
-                              <i class="fas fa-lock "></i>
-                              <input type="password" name="password" id="password" placeholder="Password" required>
-                              <label for="Password"> Password</label>
+                            <label for="Password"> <i class="fas fa-lock "></i></label>
+                              <input type="password" name="password" id="password" placeholder="Password" required><br> 
+                              
                               </div>
-                    <p>Don't have an account?<a href="/signup.html">Sign up here</a></p>
+                              <button type="submit">Sign in</button>
+                              </form>
+                              
+                    <p>Don't have an account?<a href="/signup.html">Sign up here
+                      <p class="recover">
+                        <a href="#"> Recover Password</a>
+                    </p>
+                    </a></p>
             </div>
-            <script scr="/js/auth.js"></script>
+            <script src="app.js"></script>
           </body>
  </html>
