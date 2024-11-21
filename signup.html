@@ -6,39 +6,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Up- Recipe Radar</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet"href="/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">"
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
 
           </head>
           <body>
-            <div class="container">
+            <div class="wrapper">
                 <h1>Recipe Radar</h1>
                 <h2>Sign Up</h2>
 
                 <form id="LoginForm">
                   <div class="input group">
-                    <i class="fas fa-user "></i>
+                    <label for="fname"><i class="fas fa-user "></i> </label>
                     <input type="text" name="fName" id="fName" placeholder="First Name" required>
-                    <label for="fname"> First Name</label>
+                    
                 </div>
                   <div class="input group">
-                  <i class="fas fa-user "></i>
+                    <label for="lname"> <i class="fas fa-user "></i></label>
                   <input type="text" name="lName" id="lName" placeholder="Last Name" required>
-                  <label for="lname"> Last Name</label>
+                  
                   </div>
                   <div class="input group">
-                      <i class="fas fa-envelope "></i>
+                    <label for="Email"> <i class="fas fa-envelope "></i></label>
                       <input type="email" name="email" id="email" placeholder="Email" required>
-                      <label for="Email"> Email</label>
+                      
                       </div>
                       <div class="input group">
-                          <i class="fas fa-lock "></i>
+                        <label for="Password"> <i class="fas fa-lock "></i></label>
                           <input type="password" name="password" id="password" placeholder="Password" required>
-                          <label for="Password"> Password</label>
+                          
                           </div>
+                          <div class="input group">
+                            <label for="Password"> <i class="fas fa-lock "></i></label>
+                            <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat-Password" required>
+                            
+                            </div>
+
+
                     <button type="submit">Sign Up</button>
+                      <p >Already  have an account?<a href="/login.html">Login here</a></p>
+                    </div>
                     </form>
-                    <p>Already  have an account?<a href="/login.html">Login here</a></p>
-            </div>
-            <script scr="/js/auth.js"></script>
+                   
+                    <script src="auth.js"></script>
           </body>
  </html>
