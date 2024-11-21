@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+          
+
+
+:root{
+  --accent-color:#00B2CA;
+  --base-color:rgb(161, 228, 189);
+  --text-color:#2E2B41;
+  --input-color:white;
+}
+*{margin:0;
+  padding: 0;
+  
+}
+html{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12pt;
+  color:var(--text-color);
+  text-align:center;
+
+}
+body{
+  min-height: 100vh;
+  background-image: url(backgroundimg2.jpg);
+  background-size:cover ;
+  background-position: right;
+  overflow: hidden;
+}
+.wrapper{
+  box-sizing:border-box;
+  background-color:var(--base-color) ;
+  height:100vh;
+  width:max(40%,600px);
+  padding:10px;
+  border-radius:0 20px 20px 0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+h1{
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+form{
+  width:min(400px,100%);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+form>div{
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+form label{
+  flex-shrink:0;
+  height: 50px;
+  width: 50px;
+  background-color: var(--accent-color);
+  fill: var(--base-color);
+  color: var(--input-color);
+  border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    font-weight: 500;
+    text-align: right;
+
+  }
+  form input{
+    box-sizing: border-box;
+    flex-grow: 4;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10 10 0;
+    border: 2 solid var(--input-color);
+    background-color: var(--input-color);
+    transition: 15ems ease;
+    border-left: none;
+
+  }
+  form input:focus{
+    outline: none;
+    border-color: var(--text-color);
+
+  }
+  form input:hover{
+    border-color:var(--accent-color);
+
+  }
+  div:has(input:focus)>label{
+    background-color: var(--text-color);
+  }
+  form input::placeholder{
+    color: var(--text-color);
+
+  }
+  form button{
+    margin-top: 10px;
+    border:none;
+    border-radius: 1000px;
+    padding: .85em 4em;
+    background-color: var(--accent-color);
+    color: var(--input-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+  
+  }
+  form button:hover{
+    background-color: var(--text-color);
+
+  }
+  form button:focus{
+    outline: none;
+    background-color: var(--text-color);
+
+  }
+  a{
+    text-decoration: none;
+    color: var(--accent-color);
+
+  }
+  a:hover{
+    text-decoration: underline;
+
+  }
+  @media(
+    max-width: 1110px){
+      .wrapper{
+        width:min(600px,100%);
+        border-radius: 0;
+      }
+    }
+  
